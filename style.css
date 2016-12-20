@@ -1,0 +1,151 @@
+#header_image {
+  background-color: #333;
+  margin-left: 15em;
+}
+
+header {
+  background-color: #333;
+}
+
+.dropdown {
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 4em;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+section {
+    width: 30%;
+    border: 1px solid black;
+    height: 13em;
+    box-sizing: border-box;
+    margin: 1em;
+    background-color: #CCC;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3em;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.texte_hover {
+    overflow: hidden;
+    position: relative;
+}
+
+.texte_hover p {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  line-height: 13em;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  text-align: center;
+}
+
+
+.texte_hover:hover p {
+  opacity: 1;
+}
+
+.texte_hover img {
+    max-height: 100%;
+}
+
+section:nth-child(4n+0) img,
+section:nth-child(5n+0) img  {
+  width: 100%;
+  height: 100%;
+}
+
+#texte {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#texte p:nth-child(odd) {
+  background-color: #f16f16;
+}
+
+#texte p {
+  border: 1px solid black;
+}
+
+#texte:hover p:last-child {
+  order: -1;
+  align-self: center;
+}
+
+#texte:hover p:nth-child(2) {
+  order: 1;
+  align-self: center;
+}
+
+#miniatures {
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#miniatures:hover img:nth-child(1),
+#miniatures:hover img:nth-child(3),
+#miniatures:hover img:nth-child(6),
+#miniatures:hover img:nth-child(8){
+    filter: contrast(0.2);
+    transition: ease 0.5s;
+}
+
+.images_logos {
+    width: 4em;
+    margin: 0.35em;
+    /*height: 50px;*/
+}
